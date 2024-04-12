@@ -1,0 +1,34 @@
+.skillsFlower_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+
+    @include tablet-down {
+        gap: 20px;
+    }
+
+    @include mobile-down {
+        margin-bottom: 20px;
+    }
+
+}
+
+.skillsFlower_description {
+    font-family: 'Karla';
+    font-size: 25px;
+    color: $black;
+
+    @include mobile-down {
+        font-size: 9px;
+    }
+}
+
+.skills_flower {
+    width: 55%;
+
+    @include tablet-down {
+        width: 80%;
+    }
+}

@@ -1,0 +1,155 @@
+.card_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 28%;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    background-color: $cream;
+
+    &:hover {
+        background-color: $cardBackground;
+        transform: scale(1.1);
+        border: 1px solid $textColor;
+
+        .card_picture {
+            transform: scale(1.2);
+            transition: all 0.4s ease-in-out;
+            filter: opacity(0%);
+        }
+
+        .card_title,
+        .card_description_wrapper {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    @include tablet-down {
+        border-radius: 30px;
+        width: 40%;
+    }
+
+    @include mobile-down {
+        border-radius: 20px;
+        width: 30%;
+        border-radius: 5%;
+    }
+}
+
+.card_picture {
+    width: 100%;
+}
+
+.card_details {
+    font-family: 'Sono';
+    font-weight: 100;
+    color: $textColor;
+    font-size: 30px;
+    pointer-events: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    @include tablet-down {
+        font-size: 20px;
+    }
+
+    @include mobile-down {
+        margin: 0;
+        margin-bottom: 2px;
+        font-size: 10px;
+    }
+}
+
+.card_description_wrapper {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    @include tablet-down {
+        gap: 9px;
+    }
+
+    @include mobile-down {
+        gap: 2px;
+    }
+}
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title {
+    font-family: "Karla";
+    font-weight: 300;
+    font-size: 18px;
+    color: $textColor;
+    padding-bottom: 7px;
+    pointer-events: none;
+
+    @include tablet-down {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    @include mobile-down {
+        font-size: 6px;
+        padding-bottom: 2px;
+
+    }
+}
+
+.card_text {
+    font-family: "Karla";
+    font-weight: 200;
+    font-size: 15px;
+    color: $textColor;
+    pointer-events: none;
+
+    @include tablet-down {
+        font-size: 13px;
+        padding-bottom: 0;
+    }
+
+    @include mobile-down {
+        font-size: 5px;
+        padding-bottom: 3px;
+    }
+}
+
+.card_icon_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card_icon_link {
+    width: 10%;
+    cursor: pointer;
+}
+
+.card_icon {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+        -webkit-filter: opacity(70%);
+        filter: opacity(70%);
+    }
+}
