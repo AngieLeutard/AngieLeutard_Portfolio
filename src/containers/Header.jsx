@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import logoAL from '../assets/logoAngie/AngieLeutard.png';
-
 function Header() {
 
   useEffect(() => {
