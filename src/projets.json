@@ -78,5 +78,13 @@
         "outils": "Git - Github - VS Code",
         "githubLink": "https://github.com/AngieLeutard/Fisheye",
         "webLink": "https://angieleutard.github.io/Fisheye/"
+    },
+    {
+        "picture": "petitsplats.png",
+        "description": "LES PETITS PLATS",
+        "text": "Html - CSS - JavaScript",
+        "outils": "Git - Github - VS Code",
+        "githubLink": "https://github.com/AngieLeutard/LesPetitsPlats",
+        "webLink": "https://angieleutard.github.io/LesPetitsPlats/"
     }
 ]
